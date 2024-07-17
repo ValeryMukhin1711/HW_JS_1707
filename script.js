@@ -25,9 +25,9 @@ const animals = [
 const styleSheet = document.styleSheets[0];
 console.log('styleSheet',styleSheet)
 
-styleSheet.insertRule(`.dynamic-class { width: 100px; color: red; background-color: yellow;}`, styleSheet.cssRules.length);
+styleSheet.insertRule(".dynamic-class { width: 100px; height: 100px; color: red; object-fit: cover;}", styleSheet.cssRules.length);
 
-styleSheet.insertRule(`.bottom-class { width: 400px; color: red;}`, styleSheet.cssRules.length);
+styleSheet.insertRule(".bottom-class { width: 400px; height: 400px; color: red; object-fit: cover;}", styleSheet.cssRules.length);
 
 const body = document.querySelector('body');
 for (let element in animals) {
